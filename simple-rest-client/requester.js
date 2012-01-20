@@ -157,6 +157,8 @@ function readResponse() {
 function toggleData() {
   if(jQuery.inArray($("input[type=radio]:checked").val(), ["post", "put"]) > -1) {
     $("#data").css("display", "");
+    grow('headers');
+    grow('postputdata');
   } else {
     $("#data").css("display", "none");
   }
